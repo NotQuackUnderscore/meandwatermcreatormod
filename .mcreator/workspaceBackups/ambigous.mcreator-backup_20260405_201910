@@ -1,23 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "Pineapple",
-      "type": "plant",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pineapple",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/ambigous/loot_table/blocks/pineapple.json",
-          "src/main/resources/assets/ambigous/blockstates/pineapple.json",
-          "src/main/resources/assets/ambigous/models/block/pineapple.json",
-          "src/main/resources/assets/ambigous/items/pineapple.json",
-          "src/main/java/net/mcreator/ambigous/block/PineappleBlock.java",
-          "src/main/resources/assets/ambigous/models/item/pineapple.json"
-        ]
-      }
-    },
-    {
       "name": "PineappleJuice",
       "type": "fluid",
       "compiles": true,
@@ -32,7 +15,6 @@
           "src/main/resources/assets/ambigous/blockstates/pineapple_juice.json",
           "src/main/java/net/mcreator/ambigous/block/PineappleJuiceBlock.java",
           "src/main/java/net/mcreator/ambigous/client/fluid/PineappleJuiceFluidExtension.java",
-          "src/main/resources/assets/ambigous/models/item/pineapple_juice_bucket.json",
           "src/main/resources/assets/ambigous/models/block/pineapple_juice.json"
         ]
       }
@@ -48,7 +30,6 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.ambigous.pineapple": "Pineapple",
       "item.ambigous.pineapple_juice_bucket": "Pineapple Juice Bucket",
       "fluid.ambigous.pineapple_juice": "Pineapple Juice",
       "fluid_type.ambigous.pineapple_juice": "Pineapple Juice",
@@ -63,8 +44,7 @@
       "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/ambigous/AmbigousMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/ambigous/init/AmbigousModTabs.java"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {

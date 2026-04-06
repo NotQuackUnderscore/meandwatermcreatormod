@@ -4,10 +4,14 @@
   "definition": {
     "name": "Pineapple Juice",
     "bucketName": "Pineapple Juice Bucket",
-    "textureStill": "minecraft:cactus_side",
-    "textureFlowing": "minecraft:cactus_top",
-    "textureRenderOverlay": "",
-    "hasFog": false,
+    "textureStill": "pineapple_juice_still",
+    "textureFlowing": "pineapple_juice_flow",
+    "textureRenderOverlay": "pineapple_juice_overlay",
+    "hasFog": true,
+    "fogColor": {
+      "value": -103,
+      "falpha": 0.0
+    },
     "fogStartDistance": {
       "fixedValue": 0.0
     },
@@ -30,7 +34,7 @@
     "temperature": 300,
     "type": "WATER",
     "generateBucket": true,
-    "textureBucket": "",
+    "textureBucket": "pineapple_juice_bucket",
     "creativeTabs": [],
     "emptySound": {
       "value": ""
