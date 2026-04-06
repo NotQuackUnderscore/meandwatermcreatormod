@@ -1,17 +1,50 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "PineappleJuice",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapple_juice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ambigous/fluid/types/PineappleJuiceFluidType.java",
+          "src/main/java/net/mcreator/ambigous/item/PineappleJuiceItem.java",
+          "src/main/resources/assets/ambigous/items/pineapple_juice_bucket.json",
+          "src/main/java/net/mcreator/ambigous/fluid/PineappleJuiceFluid.java",
+          "src/main/resources/assets/ambigous/blockstates/pineapple_juice.json",
+          "src/main/java/net/mcreator/ambigous/block/PineappleJuiceBlock.java",
+          "src/main/java/net/mcreator/ambigous/client/fluid/PineappleJuiceFluidExtension.java",
+          "src/main/resources/assets/ambigous/models/block/pineapple_juice.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:PineappleJuice"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.ambigous.pineapple_juice_bucket": "Pineapple Juice Bucket",
+      "fluid.ambigous.pineapple_juice": "Pineapple Juice",
+      "fluid_type.ambigous.pineapple_juice": "Pineapple Juice",
+      "block.ambigous.pineapple_juice": "Pineapple Juice"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModFluidTypes.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModFluids.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModBlocks.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/ambigous/AmbigousMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/META-INF/neoforge.mods.toml"
     ]
   },
   "foldersRoot": {
