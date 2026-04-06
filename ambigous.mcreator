@@ -16,24 +16,42 @@
           "src/main/resources/assets/ambigous/models/item/pineapple.json"
         ]
       }
+    },
+    {
+      "name": "PineappleJuice",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapple_juice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ambigous/items/pineapple_juice_bucket.json",
+          "src/main/java/net/mcreator/ambigous/fluid/types/PineappleJuiceFluidType.java",
+          "src/main/java/net/mcreator/ambigous/client/fluid/PineappleJuiceFluidExtension.java",
+          "src/main/resources/assets/ambigous/models/block/pineapple_juice.json",
+          "src/main/java/net/mcreator/ambigous/item/PineappleJuiceItem.java",
+          "src/main/java/net/mcreator/ambigous/block/PineappleJuiceBlock.java",
+          "src/main/java/net/mcreator/ambigous/fluid/PineappleJuiceFluid.java",
+          "src/main/resources/assets/ambigous/blockstates/pineapple_juice.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:PineappleJuice"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "item.ambigous.pineapple": "Pineapple"
-    }
+    "en_us": {}
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/ambigous/init/AmbigousModBlocks.java",
-      "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",
       "src/main/java/net/mcreator/ambigous/AmbigousMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/ambigous/init/AmbigousModTabs.java",
       "src/main/resources/pack.mcmeta"
     ]
   },
