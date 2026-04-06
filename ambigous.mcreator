@@ -46,12 +46,23 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.ambigous.pineapple": "Pineapple",
+      "item.ambigous.pineapple_juice_bucket": "Pineapple Juice Bucket",
+      "fluid.ambigous.pineapple_juice": "Pineapple Juice",
+      "fluid_type.ambigous.pineapple_juice": "Pineapple Juice",
+      "block.ambigous.pineapple_juice": "Pineapple Juice"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModFluids.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModFluidTypes.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModBlocks.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",
       "src/main/java/net/mcreator/ambigous/AmbigousMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModTabs.java",
       "src/main/resources/pack.mcmeta"
     ]
   },

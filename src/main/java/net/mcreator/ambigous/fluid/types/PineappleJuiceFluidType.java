@@ -1,5 +1,10 @@
 package net.mcreator.ambigous.fluid.types;
 
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.common.SoundActions;
+
+import net.minecraft.sounds.SoundEvents;
+
 public class PineappleJuiceFluidType extends FluidType {
 	public PineappleJuiceFluidType() {
 		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).motionScale(0.007D).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)

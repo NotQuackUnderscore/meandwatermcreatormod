@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ambigous:block/pineapple",
+    "particle": "ambigous:block/pineapple"
+  },
+  "render_type": "cutout"
+}
