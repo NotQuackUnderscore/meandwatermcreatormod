@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "pineapplecraftingtablerecipe",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Pineappleitem"
+      },
+      {
+        "value": "CUSTOM:Pineappleitem"
+      },
+      {
+        "value": "CUSTOM:Pineappleitem"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Pineappleitem"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Blocks.PLANKS"
+      },
+      {
+        "value": "CUSTOM:Pineappleitem"
+      },
+      {
+        "value": "Blocks.PLANKS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Pineappleessensecrafter"
+    },
+    "name": "pineapple_table",
+    "namespace": "mod"
+  }
+}

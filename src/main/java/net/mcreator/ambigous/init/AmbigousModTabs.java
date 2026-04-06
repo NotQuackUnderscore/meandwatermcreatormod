@@ -4,12 +4,15 @@
 package net.mcreator.ambigous.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.mcreator.ambigous.AmbigousMod;
@@ -17,6 +20,11 @@ import net.mcreator.ambigous.AmbigousMod;
 @EventBusSubscriber
 public class AmbigousModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AmbigousMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PINEAPPLE_MOD = REGISTRY.register("pineapple_mod",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ambigous.pineapple_mod")).icon(() -> new ItemStack(AmbigousModItems.PINEAPPLE_JUICE_BUCKET.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(AmbigousModBlocks.PINEAPPLEBUNDLE.get().asItem());
+				tabData.accept(AmbigousModItems.PINEAPPLE_CHUNK.get());
+			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

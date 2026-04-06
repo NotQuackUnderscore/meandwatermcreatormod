@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pineapplecraftingtablerecipe",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bab",
+    "cac"
+  ],
+  "key": {
+    "a": "ambigous:pineappleitem",
+    "b": "minecraft:iron_ingot",
+    "c": "#minecraft:planks"
+  },
+  "result": {
+    "id": "ambigous:pineappleessensecrafter",
+    "count": 1
+  }
+}

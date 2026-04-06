@@ -12,3 +12,9 @@
 /give dev ambigous:pineappleessensecrafter
 /give dev ambigous:pineappleitem
 /give dev ambigous:pineappleessensecrafter
+/give Dev
+/give Dev ambigous:pineapple_juice_bucket
+/give Dev ambigous:pineappleessensecrafter
+/give dev ambigous:pineapple
+/give dev ambigous:pineappleitem
+/give dev ambigous:pineappleessensecrafter

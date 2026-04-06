@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ambigous.item.PineappleitemItem;
 import net.mcreator.ambigous.item.PineappleJuiceItem;
+import net.mcreator.ambigous.item.PineappleChunkItem;
 import net.mcreator.ambigous.item.EssenceItem;
 import net.mcreator.ambigous.AmbigousMod;
 
@@ -29,12 +30,16 @@ public class AmbigousModItems {
 	public static final DeferredItem<Item> ESSENCE;
 	public static final DeferredItem<Item> PINEAPPLEITEM;
 	public static final DeferredItem<Item> PINEAPPLEESSENSECRAFTER;
+	public static final DeferredItem<Item> PINEAPPLEBUNDLE;
+	public static final DeferredItem<Item> PINEAPPLE_CHUNK;
 	static {
 		PINEAPPLE = block(AmbigousModBlocks.PINEAPPLE);
 		PINEAPPLE_JUICE_BUCKET = register("pineapple_juice_bucket", PineappleJuiceItem::new);
 		ESSENCE = register("essence", EssenceItem::new);
 		PINEAPPLEITEM = register("pineappleitem", PineappleitemItem::new);
 		PINEAPPLEESSENSECRAFTER = block(AmbigousModBlocks.PINEAPPLEESSENSECRAFTER);
+		PINEAPPLEBUNDLE = block(AmbigousModBlocks.PINEAPPLEBUNDLE);
+		PINEAPPLE_CHUNK = register("pineapple_chunk", PineappleChunkItem::new);
 	}
 
 	// Start of user code block custom items
