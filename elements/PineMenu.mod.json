@@ -1,0 +1,113 @@
+{
+  "_fv": 79,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -6980081,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Pineappleinput"
+          },
+          "onTakenFromSlot": {
+            "name": "Pineappleinput"
+          },
+          "onStackTransfer": {
+            "name": "Pineappleinput"
+          },
+          "x": 160,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "color": {
+            "value": -6980081,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "Pineappleinput"
+          },
+          "onTakenFromSlot": {
+            "name": "Pineappleinput"
+          },
+          "onStackTransfer": {
+            "name": "Pineappleinput"
+          },
+          "x": 248,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -6980081,
+            "falpha": 0.0
+          },
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 205,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "pine_menu.png",
+          "use1Xscale": false,
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

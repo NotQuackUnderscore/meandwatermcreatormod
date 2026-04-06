@@ -15,28 +15,40 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.ambigous.init.AmbigousModItems;
+import net.mcreator.ambigous.AmbigousMod;
 
 public class PineappleinputProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).getCount() < 64 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == AmbigousModItems.PINEAPPLEITEM.get()
-				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() <= 63 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == AmbigousModItems.ESSENCE.get()
+		double generator_distance = 0;
+		double previousRecipe = 0;
+		if (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() < 64 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 0).copy()).getItem() == AmbigousModItems.PINEAPPLEITEM.get()
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == AmbigousModItems.PINEAPPLEITEM.get()
+				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() <= 63 && (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == AmbigousModItems.ESSENCE.get()
 						|| (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == Blocks.AIR.asItem())) {
-			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
-				int _slotid = 0;
-				ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-				_stk.shrink(1);
-				_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
-			}
+			AmbigousMod.queueServerWork(20, () -> {
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = 0;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink(1);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				}
+				if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+					int _slotid = 1;
+					ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
+					_stk.shrink(1);
+					_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
+				}
+			});
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 				ItemStack _setstack = new ItemStack(AmbigousModItems.ESSENCE.get()).copy();
-				_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).getCount() + 1);
-				_itemHandlerModifiable.setStackInSlot(1, _setstack);
+				_setstack.setCount(itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).getCount() + 1);
+				_itemHandlerModifiable.setStackInSlot(2, _setstack);
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.furnace.fire_crackle")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.sponge.absorb")), SoundSource.BLOCKS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.furnace.fire_crackle")), SoundSource.BLOCKS, 1, 1, false);
+					_level.playLocalSound(x, y, z, BuiltInRegistries.SOUND_EVENT.getValue(ResourceLocation.parse("block.sponge.absorb")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
 		}

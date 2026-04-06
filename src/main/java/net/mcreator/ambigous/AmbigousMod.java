@@ -46,6 +46,7 @@ public class AmbigousMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		AmbigousModBlocks.REGISTRY.register(modEventBus);
+		AmbigousModBlockEntities.REGISTRY.register(modEventBus);
 		AmbigousModItems.REGISTRY.register(modEventBus);
 		AmbigousModTabs.REGISTRY.register(modEventBus);
 		AmbigousModMenus.REGISTRY.register(modEventBus);

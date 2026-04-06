@@ -16,7 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.ambigous.world.inventory.PineAppleMenuMenu;
+import net.mcreator.ambigous.world.inventory.PineMenuMenu;
 import net.mcreator.ambigous.network.MenuStateUpdateMessage;
 import net.mcreator.ambigous.AmbigousMod;
 
@@ -24,7 +24,7 @@ import java.util.Map;
 
 public class AmbigousModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(Registries.MENU, AmbigousMod.MODID);
-	public static final DeferredHolder<MenuType<?>, MenuType<PineAppleMenuMenu>> PINE_APPLE_MENU = REGISTRY.register("pine_apple_menu", () -> IMenuTypeExtension.create(PineAppleMenuMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<PineMenuMenu>> PINE_MENU = REGISTRY.register("pine_menu", () -> IMenuTypeExtension.create(PineMenuMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

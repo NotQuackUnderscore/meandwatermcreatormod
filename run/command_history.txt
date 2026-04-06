@@ -7,3 +7,8 @@
 /give dev ambigous:pineapple
 /give dev ambigous:pineappleessensecrafter
 /give dev ambigous:pineappleitem
+/give dev ambigous:pineapple_juice_bucket
+/give dev ambigous:pineappleitem
+/give dev ambigous:pineappleessensecrafter
+/give dev ambigous:pineappleitem
+/give dev ambigous:pineappleessensecrafter

@@ -39,7 +39,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Pineappleessensecrafter",
+    "name": "Pineapple Table",
     "specialInformation": {
       "fixedValue": []
     },
@@ -119,13 +119,16 @@
     "vibrationSensitivityRadius": {
       "fixedValue": 7.0
     },
-    "hasInventory": false,
-    "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "hasInventory": true,
+    "guiBoundTo": "PineMenu",
+    "openGUIOnRightClick": true,
+    "inventorySize": 3,
     "inventoryStackSize": 99,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      2
+    ],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,
     "energyInitial": 0,
@@ -135,9 +138,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "OpenPineappleMenu"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
