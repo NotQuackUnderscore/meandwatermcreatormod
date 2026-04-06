@@ -2,8 +2,8 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "pineappleworkbenchbottom",
-    "textureTop": "pineappleblocktemp",
+    "texture": "pineappleworkbenchbottom1",
+    "textureTop": "pineappleworkbenchtop",
     "textureLeft": "pineappleblockside",
     "textureFront": "pineappleblockside",
     "textureRight": "pineappleblockside",
@@ -51,7 +51,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:PineappleMod"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -93,7 +97,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "CHISELED_BOOKSHELF"
     },
     "breakSound": {
       "value": ""

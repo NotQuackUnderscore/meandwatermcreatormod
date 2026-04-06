@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "pineappleingotblock",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PineappleIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      },
+      {
+        "value": "CUSTOM:PineappleIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Pineappleingotblock"
+    },
+    "name": "pineappleingotblockrecipe",
+    "namespace": "mod"
+  }
+}

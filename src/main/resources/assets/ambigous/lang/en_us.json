@@ -6,8 +6,10 @@
   "block.ambigous.pineapple_juice": "Pineapple Juice",
   "item.ambigous.essence": "Essence",
   "item.ambigous.pineappleitem": "Pineapple",
-  "item.ambigous.pineappleessensecrafter": "Pineapple Table",
   "item_group.ambigous.pineapple_mod": "Pineapple Mod",
   "item.ambigous.pineapplebundle": "Pineapple Bundle",
-  "item.ambigous.pineapple_chunk": "Pineapple Chunk"
+  "item.ambigous.pineapple_chunk": "Pineapple Chunk",
+  "item.ambigous.pineappletable": "Pineapple Table",
+  "item.ambigous.pineapple_ingot": "Pineapple Ingot",
+  "item.ambigous.pineappleingotblock": "Pineappleingotblock"
 }

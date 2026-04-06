@@ -22,8 +22,7 @@ import net.mcreator.ambigous.AmbigousMod;
 @EventBusSubscriber
 public class AmbigousModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, AmbigousMod.MODID);
-	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PineappleessensecrafterBlockEntity>> PINEAPPLEESSENSECRAFTER = register("pineappleessensecrafter", AmbigousModBlocks.PINEAPPLEESSENSECRAFTER,
-			PineappleessensecrafterBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PineappleessensecrafterBlockEntity>> PINEAPPLETABLE = register("pineappletable", AmbigousModBlocks.PINEAPPLETABLE, PineappleessensecrafterBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,6 +32,6 @@ public class AmbigousModBlockEntities {
 
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PINEAPPLEESSENSECRAFTER.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PINEAPPLETABLE.get(), SidedInvWrapper::new);
 	}
 }

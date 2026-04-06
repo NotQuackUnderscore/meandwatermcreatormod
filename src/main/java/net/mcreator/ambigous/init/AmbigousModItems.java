@@ -17,6 +17,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.ambigous.item.PineappleitemItem;
 import net.mcreator.ambigous.item.PineappleJuiceItem;
+import net.mcreator.ambigous.item.PineappleIngotItem;
 import net.mcreator.ambigous.item.PineappleChunkItem;
 import net.mcreator.ambigous.item.EssenceItem;
 import net.mcreator.ambigous.AmbigousMod;
@@ -29,17 +30,21 @@ public class AmbigousModItems {
 	public static final DeferredItem<Item> PINEAPPLE_JUICE_BUCKET;
 	public static final DeferredItem<Item> ESSENCE;
 	public static final DeferredItem<Item> PINEAPPLEITEM;
-	public static final DeferredItem<Item> PINEAPPLEESSENSECRAFTER;
+	public static final DeferredItem<Item> PINEAPPLETABLE;
 	public static final DeferredItem<Item> PINEAPPLEBUNDLE;
 	public static final DeferredItem<Item> PINEAPPLE_CHUNK;
+	public static final DeferredItem<Item> PINEAPPLE_INGOT;
+	public static final DeferredItem<Item> PINEAPPLEINGOTBLOCK;
 	static {
 		PINEAPPLE = block(AmbigousModBlocks.PINEAPPLE);
 		PINEAPPLE_JUICE_BUCKET = register("pineapple_juice_bucket", PineappleJuiceItem::new);
 		ESSENCE = register("essence", EssenceItem::new);
 		PINEAPPLEITEM = register("pineappleitem", PineappleitemItem::new);
-		PINEAPPLEESSENSECRAFTER = block(AmbigousModBlocks.PINEAPPLEESSENSECRAFTER);
+		PINEAPPLETABLE = block(AmbigousModBlocks.PINEAPPLETABLE);
 		PINEAPPLEBUNDLE = block(AmbigousModBlocks.PINEAPPLEBUNDLE);
 		PINEAPPLE_CHUNK = register("pineapple_chunk", PineappleChunkItem::new);
+		PINEAPPLE_INGOT = register("pineapple_ingot", PineappleIngotItem::new);
+		PINEAPPLEINGOTBLOCK = block(AmbigousModBlocks.PINEAPPLEINGOTBLOCK);
 	}
 
 	// Start of user code block custom items

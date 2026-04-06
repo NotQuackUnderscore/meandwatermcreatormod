@@ -35,7 +35,11 @@
     "type": "WATER",
     "generateBucket": true,
     "textureBucket": "pineapple_juice_bucket",
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:PineappleMod"
+      }
+    ],
     "emptySound": {
       "value": ""
     },

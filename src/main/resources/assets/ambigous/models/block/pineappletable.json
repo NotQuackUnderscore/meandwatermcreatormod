@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ambigous:block/pineappleworkbenchbottom1",
+    "up": "ambigous:block/pineappleworkbenchtop",
+    "north": "ambigous:block/pineappleblockside",
+    "east": "ambigous:block/pineappleblockside",
+    "south": "ambigous:block/pineappleblockside",
+    "west": "ambigous:block/pineappleblockside",
+    "particle": "ambigous:block/pineappleworkbenchbottom1"
+  },
+  "render_type": "solid"
+}

@@ -27,7 +27,7 @@ import io.netty.buffer.Unpooled;
 
 public class PineappleessensecrafterBlock extends Block implements EntityBlock {
 	public PineappleessensecrafterBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.GRAVEL).strength(1f, 10f));
+		super(properties.sound(SoundType.CHISELED_BOOKSHELF).strength(1f, 10f));
 	}
 
 	@Override

@@ -22,8 +22,12 @@ public class AmbigousModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, AmbigousMod.MODID);
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PINEAPPLE_MOD = REGISTRY.register("pineapple_mod",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.ambigous.pineapple_mod")).icon(() -> new ItemStack(AmbigousModItems.PINEAPPLE_JUICE_BUCKET.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(AmbigousModItems.PINEAPPLE_JUICE_BUCKET.get());
+				tabData.accept(AmbigousModItems.PINEAPPLEITEM.get());
+				tabData.accept(AmbigousModBlocks.PINEAPPLETABLE.get().asItem());
 				tabData.accept(AmbigousModBlocks.PINEAPPLEBUNDLE.get().asItem());
 				tabData.accept(AmbigousModItems.PINEAPPLE_CHUNK.get());
+				tabData.accept(AmbigousModItems.PINEAPPLE_INGOT.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

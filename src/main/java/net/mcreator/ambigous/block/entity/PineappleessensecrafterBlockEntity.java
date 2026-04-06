@@ -31,7 +31,7 @@ public class PineappleessensecrafterBlockEntity extends RandomizableContainerBlo
 	private NonNullList<ItemStack> stacks = NonNullList.withSize(3, ItemStack.EMPTY);
 
 	public PineappleessensecrafterBlockEntity(BlockPos position, BlockState state) {
-		super(AmbigousModBlockEntities.PINEAPPLEESSENSECRAFTER.get(), position, state);
+		super(AmbigousModBlockEntities.PINEAPPLETABLE.get(), position, state);
 	}
 
 	@Override
@@ -74,7 +74,7 @@ public class PineappleessensecrafterBlockEntity extends RandomizableContainerBlo
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("pineappleessensecrafter");
+		return Component.literal("pineappletable");
 	}
 
 	@Override

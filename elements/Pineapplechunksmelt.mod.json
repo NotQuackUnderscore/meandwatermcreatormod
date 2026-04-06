@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "pineapplechunksmelt",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PineappleChunk"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 150,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:PineappleChunk"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:PineappleIngot"
+    },
+    "name": "pineapplechunksmelt",
+    "namespace": "mod"
+  }
+}
