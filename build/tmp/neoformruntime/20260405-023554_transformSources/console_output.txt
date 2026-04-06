@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - C:\Program Files\Pylo\MCreator\jdk\bin\java.exe
+ - -jar
+ - C:\Users\abomb\.mcreator\gradle\caches\modules-2\files-2.1\net.neoforged.jst\jst-cli-bundle\1.0.74\4b55f9a755ff69d480d3fb5d68c40662f5265b7e\jst-cli-bundle-1.0.74.jar
+ - --problems-report
+ - C:\Users\abomb\MCreatorWorkspaces\bsns\build\tmp\neoformruntime\20260405-023554_transformSources\problems.json
+ - --libraries-list
+ - ./libraries.txt
+ - --in-format
+ - ARCHIVE
+ - --out-format
+ - ARCHIVE
+ - --enable-accesstransformers
+ - --access-transformer
+ - ats\accesstransformer.cfg
+ - --access-transformer
+ - ats\accesstransformergenerated.cfg
+ - C:\Users\abomb\.mcreator\gradle\caches\neoformruntime\intermediate_results\applyNeoforgePatches_f3a19de88bf5cc564cd268fcf8403689bd080186_output.zip
+ - ./output.zip
+--------------------------------------------------------------------------------
+
