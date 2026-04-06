@@ -96,54 +96,6 @@
       }
     },
     {
-      "name": "PineAppleMenu",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pine_apple_menu",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ambigous/world/inventory/PineAppleMenuMenu.java",
-          "src/main/java/net/mcreator/ambigous/client/gui/PineAppleMenuScreen.java",
-          "src/main/java/net/mcreator/ambigous/network/PineAppleMenuSlotMessage.java"
-        ]
-      }
-    },
-    {
-      "name": "OpenPineappleMenu",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "open_pineapple_menu",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/ambigous/procedures/OpenPineappleMenuProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "Pineappleessensecrafter",
       "type": "block",
       "compiles": true,
@@ -151,6 +103,7 @@
       "registry_name": "pineappleessensecrafter",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/ambigous/block/entity/PineappleessensecrafterBlockEntity.java",
           "src/main/resources/assets/ambigous/models/block/pineappleessensecrafter.json",
           "src/main/resources/data/ambigous/loot_table/blocks/pineappleessensecrafter.json",
           "src/main/java/net/mcreator/ambigous/block/PineappleessensecrafterBlock.java",
@@ -168,6 +121,20 @@
       "registry_name": "pineapple_mod",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "PineMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ambigous/client/gui/PineMenuScreen.java",
+          "src/main/java/net/mcreator/ambigous/world/inventory/PineMenuMenu.java",
+          "src/main/java/net/mcreator/ambigous/network/PineMenuSlotMessage.java"
+        ]
       }
     }
   ],
@@ -188,7 +155,7 @@
       "block.ambigous.pineapple_juice": "Pineapple Juice",
       "item.ambigous.essence": "Essence",
       "item.ambigous.pineappleitem": "Pineapple",
-      "item.ambigous.pineappleessensecrafter": "Pineappleessensecrafter",
+      "item.ambigous.pineappleessensecrafter": "Pineapple Table",
       "item_group.ambigous.pineapple_mod": "Pineapple Mod"
     }
   },
@@ -200,6 +167,7 @@
       "src/main/java/net/mcreator/ambigous/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModMenus.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModBlocks.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModBlockEntities.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",
       "src/main/java/net/mcreator/ambigous/AmbigousMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",

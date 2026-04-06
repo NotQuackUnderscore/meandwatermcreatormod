@@ -96,20 +96,6 @@
       }
     },
     {
-      "name": "PineAppleMenu",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pine_apple_menu",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/ambigous/world/inventory/PineAppleMenuMenu.java",
-          "src/main/java/net/mcreator/ambigous/client/gui/PineAppleMenuScreen.java",
-          "src/main/java/net/mcreator/ambigous/network/PineAppleMenuSlotMessage.java"
-        ]
-      }
-    },
-    {
       "name": "Pineappleessensecrafter",
       "type": "block",
       "compiles": true,
@@ -135,6 +121,20 @@
       "registry_name": "pineapple_mod",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "PineMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pine_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ambigous/client/gui/PineMenuScreen.java",
+          "src/main/java/net/mcreator/ambigous/world/inventory/PineMenuMenu.java",
+          "src/main/java/net/mcreator/ambigous/network/PineMenuSlotMessage.java"
+        ]
       }
     }
   ],
