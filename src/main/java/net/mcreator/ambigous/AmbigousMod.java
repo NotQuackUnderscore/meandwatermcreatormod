@@ -20,11 +20,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.ambigous.init.AmbigousModTabs;
-import net.mcreator.ambigous.init.AmbigousModItems;
-import net.mcreator.ambigous.init.AmbigousModFluids;
-import net.mcreator.ambigous.init.AmbigousModFluidTypes;
-import net.mcreator.ambigous.init.AmbigousModBlocks;
+import net.mcreator.ambigous.init.*;
 
 import javax.annotation.Nullable;
 
@@ -52,6 +48,7 @@ public class AmbigousMod {
 		AmbigousModBlocks.REGISTRY.register(modEventBus);
 		AmbigousModItems.REGISTRY.register(modEventBus);
 		AmbigousModTabs.REGISTRY.register(modEventBus);
+		AmbigousModMenus.REGISTRY.register(modEventBus);
 		AmbigousModFluids.REGISTRY.register(modEventBus);
 		AmbigousModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

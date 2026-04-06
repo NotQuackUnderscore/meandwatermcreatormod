@@ -1,0 +1,9 @@
+/give Dev ambigous:pineappleessensecrafter
+/give Dev ambigous:pineappleitem
+/give Dev ambigous:pineapple_juice_bucket
+/give dev ambigous:pineappleessensecrafter
+/give dev ambigous:pineappleitem
+/give dev ambigous:pineappleessensecrafter
+/give dev ambigous:pineapple
+/give dev ambigous:pineappleessensecrafter
+/give dev ambigous:pineappleitem

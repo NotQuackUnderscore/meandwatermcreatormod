@@ -1,7 +1,11 @@
 {
-  "item.ambigous.pineapple": "Pineapple",
+  "item.ambigous.pineapple": "Pineapple Plant",
   "item.ambigous.pineapple_juice_bucket": "Pineapple Juice Bucket",
   "fluid.ambigous.pineapple_juice": "Pineapple Juice",
   "fluid_type.ambigous.pineapple_juice": "Pineapple Juice",
-  "block.ambigous.pineapple_juice": "Pineapple Juice"
+  "block.ambigous.pineapple_juice": "Pineapple Juice",
+  "item.ambigous.essence": "Essence",
+  "item.ambigous.pineappleitem": "Pineapple",
+  "item.ambigous.pineappleessensecrafter": "Pineappleessensecrafter",
+  "item_group.ambigous.pineapple_mod": "Pineapple Mod"
 }

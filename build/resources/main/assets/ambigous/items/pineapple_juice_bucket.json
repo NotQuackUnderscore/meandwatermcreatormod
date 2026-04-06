@@ -1,11 +1,6 @@
 {
   "model": {
-    "type": "neoforge:fluid_container",
-    "fluid": "ambigous:pineapple_juice",
-    "textures": {
-      "base": "item/bucket",
-      "fluid": "neoforge:item/mask/bucket_fluid",
-      "cover": "neoforge:item/mask/bucket_fluid_cover"
-    }
+    "type": "minecraft:model",
+    "model": "ambigous:item/pineapple_juice_bucket"
   }
 }

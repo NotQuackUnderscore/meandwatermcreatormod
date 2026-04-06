@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.ambigous.block.PineappleessensecrafterBlock;
 import net.mcreator.ambigous.block.PineappleJuiceBlock;
 import net.mcreator.ambigous.block.PineappleBlock;
 import net.mcreator.ambigous.AmbigousMod;
@@ -19,9 +20,11 @@ public class AmbigousModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(AmbigousMod.MODID);
 	public static final DeferredBlock<Block> PINEAPPLE;
 	public static final DeferredBlock<Block> PINEAPPLE_JUICE;
+	public static final DeferredBlock<Block> PINEAPPLEESSENSECRAFTER;
 	static {
 		PINEAPPLE = register("pineapple", PineappleBlock::new);
 		PINEAPPLE_JUICE = register("pineapple_juice", PineappleJuiceBlock::new);
+		PINEAPPLEESSENSECRAFTER = register("pineappleessensecrafter", PineappleessensecrafterBlock::new);
 	}
 
 	// Start of user code block custom blocks

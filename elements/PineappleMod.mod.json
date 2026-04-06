@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Pineapple Mod",
+    "icon": {
+      "value": "CUSTOM:PineappleJuice.bucket"
+    },
+    "showSearch": true
+  }
+}
