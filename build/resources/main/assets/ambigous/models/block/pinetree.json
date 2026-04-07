@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "ambigous:block/2026_04_06_137_kleki",
+    "particle": "ambigous:block/2026_04_06_137_kleki"
+  },
+  "render_type": "cutout"
+}

@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.core.registries.BuiltInRegistries;
 
+import net.mcreator.ambigous.block.entity.PineleavesBlockEntity;
 import net.mcreator.ambigous.block.entity.PineappleessensecrafterBlockEntity;
 import net.mcreator.ambigous.AmbigousMod;
 
@@ -23,6 +24,7 @@ import net.mcreator.ambigous.AmbigousMod;
 public class AmbigousModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(BuiltInRegistries.BLOCK_ENTITY_TYPE, AmbigousMod.MODID);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PineappleessensecrafterBlockEntity>> PINEAPPLETABLE = register("pineappletable", AmbigousModBlocks.PINEAPPLETABLE, PineappleessensecrafterBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PineleavesBlockEntity>> PINELEAVES = register("pineleaves", AmbigousModBlocks.PINELEAVES, PineleavesBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -33,5 +35,7 @@ public class AmbigousModBlockEntities {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PINEAPPLETABLE.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PINELEAVES.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.FluidHandler.BLOCK, PINELEAVES.get(), (blockEntity, side) -> blockEntity.getFluidTank());
 	}
 }

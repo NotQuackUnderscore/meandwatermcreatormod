@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "ambigous:pineappleingotblock"
+    "ambigous:pineapplecobble",
+    "ambigous:pineappleingotblock",
+    "ambigous:pineapplestone"
   ]
 }

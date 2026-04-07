@@ -33,12 +33,18 @@ public class AmbigousModTabs {
 				tabData.accept(AmbigousModBlocks.PINEAPPLEGRASS.get().asItem());
 				tabData.accept(AmbigousModBlocks.PINEAPPLECOBBLE.get().asItem());
 				tabData.accept(AmbigousModItems.PINEAPPLE_CANNON.get());
+				tabData.accept(AmbigousModBlocks.PINELOG.get().asItem());
+				tabData.accept(AmbigousModBlocks.PINEPLANKS.get().asItem());
+				tabData.accept(AmbigousModItems.PINEAPPLESWORD.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(AmbigousModBlocks.PINEAPPLE.get().asItem());
+			tabData.accept(AmbigousModBlocks.PINETREE.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(AmbigousModItems.PINEAPPLESWORD.get());
 		}
 	}
 }

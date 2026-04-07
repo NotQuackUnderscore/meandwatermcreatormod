@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ambigous:block/pinelog",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ambigous:block/pinelog"
+    },
+    "axis=z": {
+      "model": "ambigous:block/pinelog",
+      "x": 90
+    }
+  }
+}

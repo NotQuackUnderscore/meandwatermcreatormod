@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ambigous:block/2026_04_06_137_kleki"
+  }
+}

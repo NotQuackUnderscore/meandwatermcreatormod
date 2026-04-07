@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ambigous:block/2026_04_06_12u_kleki",
+    "particle": "ambigous:block/2026_04_06_12u_kleki"
+  }
+}

@@ -365,6 +365,132 @@
           "src/main/resources/assets/ambigous/models/item/pineapple_cannon.json"
         ]
       }
+    },
+    {
+      "name": "Pinelog",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinelog",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ambigous/items/pinelog.json",
+          "src/main/resources/assets/ambigous/models/block/pinelog.json",
+          "src/main/java/net/mcreator/ambigous/block/PinelogBlock.java",
+          "src/main/resources/assets/ambigous/blockstates/pinelog.json",
+          "src/main/resources/data/ambigous/loot_table/blocks/pinelog.json",
+          "src/main/resources/assets/ambigous/models/item/pinelog.json"
+        ]
+      }
+    },
+    {
+      "name": "Pineplanks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineplanks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/loot_table/blocks/pineplanks.json",
+          "src/main/resources/assets/ambigous/models/block/pineplanks.json",
+          "src/main/resources/assets/ambigous/models/item/pineplanks.json",
+          "src/main/resources/assets/ambigous/blockstates/pineplanks.json",
+          "src/main/resources/assets/ambigous/items/pineplanks.json",
+          "src/main/java/net/mcreator/ambigous/block/PineplanksBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Pineleaves",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineleaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ambigous/block/PineleavesBlock.java",
+          "src/main/resources/assets/ambigous/models/item/pineleaves.json",
+          "src/main/resources/assets/ambigous/items/pineleaves.json",
+          "src/main/resources/assets/ambigous/models/block/pineleaves.json",
+          "src/main/resources/assets/ambigous/blockstates/pineleaves.json",
+          "src/main/java/net/mcreator/ambigous/block/entity/PineleavesBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Pineactualtree",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineactualtree",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/worldgen/configured_feature/pineactualtree.json",
+          "src/main/resources/data/ambigous/neoforge/biome_modifier/pineactualtree_biome_modifier.json",
+          "src/main/resources/data/ambigous/worldgen/placed_feature/pineactualtree.json"
+        ]
+      }
+    },
+    {
+      "name": "Pinetree",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pinetree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/ambigous/block/PinetreeBlock.java",
+          "src/main/resources/assets/ambigous/models/item/pinetree.json",
+          "src/main/resources/assets/ambigous/models/block/pinetree.json",
+          "src/main/resources/assets/ambigous/blockstates/pinetree.json",
+          "src/main/resources/data/ambigous/loot_table/blocks/pinetree.json",
+          "src/main/resources/assets/ambigous/items/pinetree.json"
+        ]
+      }
+    },
+    {
+      "name": "Pineleavedrop",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineleavedrop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/loot_table/blocks/pineleaves.json"
+        ]
+      }
+    },
+    {
+      "name": "PineappleswordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapplesword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ambigous/procedures/PineappleswordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Pineapplesword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapplesword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ambigous/items/pineapplesword.json",
+          "src/main/java/net/mcreator/ambigous/item/PineappleswordItem.java",
+          "src/main/resources/assets/ambigous/models/item/pineapplesword.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -383,6 +509,25 @@
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~CUSTOM:PineappleCannon"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:Pineplanks",
+      "~CUSTOM:Pinelog"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:Pineleaves"
+    ],
+    "BLOCKS:minecraft:leaves": [
+      "~CUSTOM:Pineleaves"
+    ],
+    "BLOCKS:minecraft:saplings": [
+      "~CUSTOM:Pinetree"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:Pineapplesword"
+    ],
+    "ITEMS:ambigous:pineapplesword_repair_items": [
+      "~CUSTOM:PineappleIngot"
     ]
   },
   "tab_element_order": {},
@@ -400,7 +545,18 @@
       "item.ambigous.pineapple_chunk": "Pineapple Chunk",
       "item.ambigous.pineappletable": "Pineapple Table",
       "item.ambigous.pineapple_ingot": "Pineapple Ingot",
-      "item.ambigous.pineappleingotblock": "Pineappleingotblock"
+      "item.ambigous.pineappleingotblock": "Block of Pineapple",
+      "item.ambigous.pineapplestone": "Pineappledirt",
+      "item.ambigous.pineappledirt": "Pineappledirt",
+      "item.ambigous.pineapplegrass": "Pineappledirt",
+      "item.ambigous.pineapplecobble": "Pineappledirt",
+      "effect.ambigous.pineappleeffect": "Pineappleeffect",
+      "item.ambigous.pineapple_cannon": "Pineapple Cannon",
+      "item.ambigous.pinelog": "Pine Log",
+      "item.ambigous.pineplanks": "Pine Log",
+      "item.ambigous.pineleaves": "Pineleaves",
+      "item.ambigous.pinetree": "Pine Sapling",
+      "item.ambigous.pineapplesword": "Pineapplesword"
     }
   },
   "metadata": {
@@ -410,12 +566,14 @@
       "src/main/java/net/mcreator/ambigous/init/AmbigousModScreens.java",
       "src/main/java/net/mcreator/ambigous/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModMenus.java",
+      "src/main/java/net/mcreator/ambigous/init/AmbigousModMobEffects.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModBlocks.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModBlockEntities.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",
       "src/main/java/net/mcreator/ambigous/AmbigousMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/resources/pack.mcmeta"
     ]
   },

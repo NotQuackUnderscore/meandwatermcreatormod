@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ambigous:block/2026_04_06_12e_kleki_2",
+    "up": "ambigous:block/2026_04_06_12e_kleki_2",
+    "north": "ambigous:block/2026_04_06_12e_kleki_2",
+    "east": "ambigous:block/2026_04_06_12e_kleki_2",
+    "south": "ambigous:block/2026_04_06_12e_kleki_2",
+    "west": "ambigous:block/2026_04_06_12e_kleki_2",
+    "particle": "ambigous:block/2026_04_06_12e_kleki_2"
+  },
+  "render_type": "solid"
+}

@@ -25,6 +25,10 @@ public class AmbigousModBlocks {
 	public static final DeferredBlock<Block> PINEAPPLEDIRT;
 	public static final DeferredBlock<Block> PINEAPPLEGRASS;
 	public static final DeferredBlock<Block> PINEAPPLECOBBLE;
+	public static final DeferredBlock<Block> PINELOG;
+	public static final DeferredBlock<Block> PINEPLANKS;
+	public static final DeferredBlock<Block> PINELEAVES;
+	public static final DeferredBlock<Block> PINETREE;
 	static {
 		PINEAPPLE = register("pineapple", PineappleBlock::new);
 		PINEAPPLE_JUICE = register("pineapple_juice", PineappleJuiceBlock::new);
@@ -35,6 +39,10 @@ public class AmbigousModBlocks {
 		PINEAPPLEDIRT = register("pineappledirt", PineappledirtBlock::new);
 		PINEAPPLEGRASS = register("pineapplegrass", PineapplegrassBlock::new);
 		PINEAPPLECOBBLE = register("pineapplecobble", PineapplecobbleBlock::new);
+		PINELOG = register("pinelog", PinelogBlock::new);
+		PINEPLANKS = register("pineplanks", PineplanksBlock::new);
+		PINELEAVES = register("pineleaves", PineleavesBlock::new);
+		PINETREE = register("pinetree", PinetreeBlock::new);
 	}
 
 	// Start of user code block custom blocks
