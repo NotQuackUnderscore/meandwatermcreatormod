@@ -238,6 +238,45 @@
       }
     },
     {
+      "name": "PineappleeffectOnEntityHurt",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineappleeffect_on_entity_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/ambigous/procedures/PineappleeffectOnEntityHurtProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Pineapplestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapplestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ambigous/blockstates/pineapplestone.json",
+          "src/main/resources/assets/ambigous/models/item/pineapplestone.json",
+          "src/main/resources/assets/ambigous/models/block/pineapplestone.json",
+          "src/main/resources/data/ambigous/loot_table/blocks/pineapplestone.json",
+          "src/main/resources/assets/ambigous/items/pineapplestone.json",
+          "src/main/java/net/mcreator/ambigous/block/PineapplestoneBlock.java"
+        ]
+      }
+    },
+    {
       "name": "Pineappledirt",
       "type": "block",
       "compiles": true,
@@ -272,23 +311,6 @@
       }
     },
     {
-      "name": "Pineapplestone",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pineapplestone",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/ambigous/blockstates/pineapplestone.json",
-          "src/main/resources/assets/ambigous/models/item/pineapplestone.json",
-          "src/main/resources/assets/ambigous/models/block/pineapplestone.json",
-          "src/main/resources/data/ambigous/loot_table/blocks/pineapplestone.json",
-          "src/main/resources/assets/ambigous/items/pineapplestone.json",
-          "src/main/java/net/mcreator/ambigous/block/PineapplestoneBlock.java"
-        ]
-      }
-    },
-    {
       "name": "Pineapplecobble",
       "type": "block",
       "compiles": true,
@@ -306,28 +328,6 @@
       }
     },
     {
-      "name": "PineappleeffectOnEntityHurt",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pineappleeffect_on_entity_hurt",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/ambigous/procedures/PineappleeffectOnEntityHurtProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "Pineappleeffect",
       "type": "potioneffect",
       "compiles": true,
@@ -336,6 +336,33 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/ambigous/potion/PineappleeffectMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "PineappleCannonR",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapple_cannon_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/recipe/pineapple_cannon.json",
+          "src/main/resources/data/ambigous/advancement/recipes/pineapple_cannon_r.json"
+        ]
+      }
+    },
+    {
+      "name": "PineappleCannon",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapple_cannon",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/ambigous/items/pineapple_cannon.json",
+          "src/main/java/net/mcreator/ambigous/item/PineappleCannonItem.java",
+          "src/main/resources/assets/ambigous/models/item/pineapple_cannon.json"
         ]
       }
     }
@@ -353,6 +380,9 @@
     ],
     "BLOCKS:minecraft:needs_iron_tool": [
       "~CUSTOM:Pineappleingotblock"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:PineappleCannon"
     ]
   },
   "tab_element_order": {},
@@ -370,12 +400,7 @@
       "item.ambigous.pineapple_chunk": "Pineapple Chunk",
       "item.ambigous.pineappletable": "Pineapple Table",
       "item.ambigous.pineapple_ingot": "Pineapple Ingot",
-      "item.ambigous.pineappleingotblock": "Pineappleingotblock",
-      "item.ambigous.pineappledirt": "Pineappledirt",
-      "item.ambigous.pineapplegrass": "Pineappledirt",
-      "item.ambigous.pineapplestone": "Pineappledirt",
-      "item.ambigous.pineapplecobble": "Pineappledirt",
-      "effect.ambigous.pineappleeffect": "Pineappleeffect"
+      "item.ambigous.pineappleingotblock": "Pineappleingotblock"
     }
   },
   "metadata": {
@@ -385,7 +410,6 @@
       "src/main/java/net/mcreator/ambigous/init/AmbigousModScreens.java",
       "src/main/java/net/mcreator/ambigous/network/MenuStateUpdateMessage.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModMenus.java",
-      "src/main/java/net/mcreator/ambigous/init/AmbigousModMobEffects.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModBlocks.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModBlockEntities.java",
       "src/main/java/net/mcreator/ambigous/init/AmbigousModItems.java",

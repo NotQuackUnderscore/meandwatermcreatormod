@@ -21,9 +21,9 @@ public class AmbigousModBlocks {
 	public static final DeferredBlock<Block> PINEAPPLETABLE;
 	public static final DeferredBlock<Block> PINEAPPLEBUNDLE;
 	public static final DeferredBlock<Block> PINEAPPLEINGOTBLOCK;
+	public static final DeferredBlock<Block> PINEAPPLESTONE;
 	public static final DeferredBlock<Block> PINEAPPLEDIRT;
 	public static final DeferredBlock<Block> PINEAPPLEGRASS;
-	public static final DeferredBlock<Block> PINEAPPLESTONE;
 	public static final DeferredBlock<Block> PINEAPPLECOBBLE;
 	static {
 		PINEAPPLE = register("pineapple", PineappleBlock::new);
@@ -31,9 +31,9 @@ public class AmbigousModBlocks {
 		PINEAPPLETABLE = register("pineappletable", PineappleessensecrafterBlock::new);
 		PINEAPPLEBUNDLE = register("pineapplebundle", PineapplebundleBlock::new);
 		PINEAPPLEINGOTBLOCK = register("pineappleingotblock", PineappleingotblockBlock::new);
+		PINEAPPLESTONE = register("pineapplestone", PineapplestoneBlock::new);
 		PINEAPPLEDIRT = register("pineappledirt", PineappledirtBlock::new);
 		PINEAPPLEGRASS = register("pineapplegrass", PineapplegrassBlock::new);
-		PINEAPPLESTONE = register("pineapplestone", PineapplestoneBlock::new);
 		PINEAPPLECOBBLE = register("pineapplecobble", PineapplecobbleBlock::new);
 	}
 
