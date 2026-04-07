@@ -28,6 +28,7 @@ public class AmbigousModTabs {
 				tabData.accept(AmbigousModBlocks.PINEAPPLEBUNDLE.get().asItem());
 				tabData.accept(AmbigousModItems.PINEAPPLE_CHUNK.get());
 				tabData.accept(AmbigousModItems.PINEAPPLE_INGOT.get());
+				tabData.accept(AmbigousModItems.PINEAPPLE_CANNON.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

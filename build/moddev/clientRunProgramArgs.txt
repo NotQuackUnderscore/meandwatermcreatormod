@@ -9,7 +9,7 @@ neoforgeclientdev
 --assetIndex
 26
 --assetsDir
-C:\\Users\\abomb\\.mcreator\\gradle\\caches\\neoformruntime\\assets
+C:\\Users\\graha\\.mcreator\\gradle\\caches\\neoformruntime\\assets
 --fml.fmlVersion
 9.0.16
 --fml.mcVersion

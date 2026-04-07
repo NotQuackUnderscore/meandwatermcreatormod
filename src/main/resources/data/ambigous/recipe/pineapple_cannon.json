@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abb",
+    "cd ",
+    "e  "
+  ],
+  "key": {
+    "a": "minecraft:redstone_torch",
+    "b": "ambigous:pineapple_ingot",
+    "c": "ambigous:pineapplebundle",
+    "d": "minecraft:iron_nugget",
+    "e": "minecraft:stick"
+  },
+  "result": {
+    "id": "ambigous:pineapple_cannon",
+    "count": 1
+  }
+}
