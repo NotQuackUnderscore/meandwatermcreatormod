@@ -35,6 +35,10 @@ public class AmbigousModItems {
 	public static final DeferredItem<Item> PINEAPPLE_CHUNK;
 	public static final DeferredItem<Item> PINEAPPLE_INGOT;
 	public static final DeferredItem<Item> PINEAPPLEINGOTBLOCK;
+	public static final DeferredItem<Item> PINEAPPLEDIRT;
+	public static final DeferredItem<Item> PINEAPPLEGRASS;
+	public static final DeferredItem<Item> PINEAPPLESTONE;
+	public static final DeferredItem<Item> PINEAPPLECOBBLE;
 	static {
 		PINEAPPLE = block(AmbigousModBlocks.PINEAPPLE);
 		PINEAPPLE_JUICE_BUCKET = register("pineapple_juice_bucket", PineappleJuiceItem::new);
@@ -45,6 +49,10 @@ public class AmbigousModItems {
 		PINEAPPLE_CHUNK = register("pineapple_chunk", PineappleChunkItem::new);
 		PINEAPPLE_INGOT = register("pineapple_ingot", PineappleIngotItem::new);
 		PINEAPPLEINGOTBLOCK = block(AmbigousModBlocks.PINEAPPLEINGOTBLOCK);
+		PINEAPPLEDIRT = block(AmbigousModBlocks.PINEAPPLEDIRT);
+		PINEAPPLEGRASS = block(AmbigousModBlocks.PINEAPPLEGRASS);
+		PINEAPPLESTONE = block(AmbigousModBlocks.PINEAPPLESTONE);
+		PINEAPPLECOBBLE = block(AmbigousModBlocks.PINEAPPLECOBBLE);
 	}
 
 	// Start of user code block custom items

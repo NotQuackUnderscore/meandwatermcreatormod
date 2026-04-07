@@ -49,6 +49,7 @@ public class AmbigousMod {
 		AmbigousModBlockEntities.REGISTRY.register(modEventBus);
 		AmbigousModItems.REGISTRY.register(modEventBus);
 		AmbigousModTabs.REGISTRY.register(modEventBus);
+		AmbigousModMobEffects.REGISTRY.register(modEventBus);
 		AmbigousModMenus.REGISTRY.register(modEventBus);
 		AmbigousModFluids.REGISTRY.register(modEventBus);
 		AmbigousModFluidTypes.REGISTRY.register(modEventBus);

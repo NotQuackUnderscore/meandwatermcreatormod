@@ -9,11 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.ambigous.block.PineappleingotblockBlock;
-import net.mcreator.ambigous.block.PineappleessensecrafterBlock;
-import net.mcreator.ambigous.block.PineapplebundleBlock;
-import net.mcreator.ambigous.block.PineappleJuiceBlock;
-import net.mcreator.ambigous.block.PineappleBlock;
+import net.mcreator.ambigous.block.*;
 import net.mcreator.ambigous.AmbigousMod;
 
 import java.util.function.Function;
@@ -25,12 +21,20 @@ public class AmbigousModBlocks {
 	public static final DeferredBlock<Block> PINEAPPLETABLE;
 	public static final DeferredBlock<Block> PINEAPPLEBUNDLE;
 	public static final DeferredBlock<Block> PINEAPPLEINGOTBLOCK;
+	public static final DeferredBlock<Block> PINEAPPLEDIRT;
+	public static final DeferredBlock<Block> PINEAPPLEGRASS;
+	public static final DeferredBlock<Block> PINEAPPLESTONE;
+	public static final DeferredBlock<Block> PINEAPPLECOBBLE;
 	static {
 		PINEAPPLE = register("pineapple", PineappleBlock::new);
 		PINEAPPLE_JUICE = register("pineapple_juice", PineappleJuiceBlock::new);
 		PINEAPPLETABLE = register("pineappletable", PineappleessensecrafterBlock::new);
 		PINEAPPLEBUNDLE = register("pineapplebundle", PineapplebundleBlock::new);
 		PINEAPPLEINGOTBLOCK = register("pineappleingotblock", PineappleingotblockBlock::new);
+		PINEAPPLEDIRT = register("pineappledirt", PineappledirtBlock::new);
+		PINEAPPLEGRASS = register("pineapplegrass", PineapplegrassBlock::new);
+		PINEAPPLESTONE = register("pineapplestone", PineapplestoneBlock::new);
+		PINEAPPLECOBBLE = register("pineapplecobble", PineapplecobbleBlock::new);
 	}
 
 	// Start of user code block custom blocks

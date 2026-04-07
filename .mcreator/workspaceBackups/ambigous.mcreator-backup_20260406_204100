@@ -193,6 +193,66 @@
           "src/main/resources/assets/ambigous/models/item/pineapple_ingot.json"
         ]
       }
+    },
+    {
+      "name": "Pineapplechunksmelt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineapplechunksmelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/advancement/recipes/pineapplechunksmelt.json",
+          "src/main/resources/data/ambigous/recipe/pineapplechunksmelt.json"
+        ]
+      }
+    },
+    {
+      "name": "Pineappleingotblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineappleingotblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/loot_table/blocks/pineappleingotblock.json",
+          "src/main/resources/assets/ambigous/models/item/pineappleingotblock.json",
+          "src/main/resources/assets/ambigous/models/block/pineappleingotblock.json",
+          "src/main/resources/assets/ambigous/items/pineappleingotblock.json",
+          "src/main/resources/assets/ambigous/blockstates/pineappleingotblock.json",
+          "src/main/java/net/mcreator/ambigous/block/PineappleingotblockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Pineappleingotblockrecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineappleingotblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/recipe/pineappleingotblockrecipe.json",
+          "src/main/resources/data/ambigous/advancement/recipes/pineappleingotblockrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Pineappledirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pineappledirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/ambigous/loot_table/blocks/pineappledirt.json",
+          "src/main/resources/assets/ambigous/models/item/pineappledirt.json",
+          "src/main/resources/assets/ambigous/blockstates/pineappledirt.json",
+          "src/main/resources/assets/ambigous/items/pineappledirt.json",
+          "src/main/java/net/mcreator/ambigous/block/PineappledirtBlock.java",
+          "src/main/resources/assets/ambigous/models/block/pineappledirt.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -200,6 +260,12 @@
   "tag_elements": {
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:PineappleJuice"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:Pineappleingotblock"
+    ],
+    "BLOCKS:minecraft:needs_iron_tool": [
+      "~CUSTOM:Pineappleingotblock"
     ]
   },
   "tab_element_order": {},
@@ -216,7 +282,9 @@
       "item.ambigous.pineapplebundle": "Pineapple Bundle",
       "item.ambigous.pineapple_chunk": "Pineapple Chunk",
       "item.ambigous.pineappletable": "Pineapple Table",
-      "item.ambigous.pineapple_ingot": "Pineapple Ingot"
+      "item.ambigous.pineapple_ingot": "Pineapple Ingot",
+      "item.ambigous.pineappleingotblock": "Pineappleingotblock",
+      "item.ambigous.pineappledirt": "Pineappledirt"
     }
   },
   "metadata": {

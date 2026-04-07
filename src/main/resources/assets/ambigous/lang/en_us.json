@@ -11,5 +11,10 @@
   "item.ambigous.pineapple_chunk": "Pineapple Chunk",
   "item.ambigous.pineappletable": "Pineapple Table",
   "item.ambigous.pineapple_ingot": "Pineapple Ingot",
-  "item.ambigous.pineappleingotblock": "Pineappleingotblock"
+  "item.ambigous.pineappleingotblock": "Pineappleingotblock",
+  "item.ambigous.pineappledirt": "Pineappledirt",
+  "item.ambigous.pineapplegrass": "Pineappledirt",
+  "item.ambigous.pineapplestone": "Pineappledirt",
+  "item.ambigous.pineapplecobble": "Pineappledirt",
+  "effect.ambigous.pineappleeffect": "Pineappleeffect"
 }
